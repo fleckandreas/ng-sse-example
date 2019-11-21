@@ -1,0 +1,15 @@
+<p>Admin</p>
+<div class="menu" >
+<button mat-raised-button color="primary" (click)="registerAsServer()" >Registrierung als Server</button>
+<button mat-button color="info" (click)="disconnectServer()" >Registrierung aufheben</button>
+<button mat-button color="info" (click)="clearDB()" >Registrierungen löschen</button>
+<button mat-raised-button color="warn" (click)="registerAsClient()()" >als Client registrieren </button>
+</div>
+<div>
+<label>Clients</label>
+<mat-list>
+    <mat-list-item *ngFor="let client of bs.clients$ | async">
+        {{client.name}}
+    </mat-list-item>
+</mat-list>
+</div>
