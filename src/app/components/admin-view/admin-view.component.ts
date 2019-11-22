@@ -27,7 +27,5 @@ export class AdminViewComponent implements OnInit {
     if(name){
       this.bs.registerAsClient(name);
     }
-  }
-  //git remote add origin https://github.com/fleckandreas/ng-sse-example.git
-  //kegjod-Buqjat-5wyvfa
+  } 
 }
